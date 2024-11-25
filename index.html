@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kezdő Vállalkozás</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Kezdő Vállalkozás</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Kezdőlap</a></li>
+                    <li><a href="products.html">Termékek</a></li>
+                    <li><a href="#about">Rólunk</a></li>
+                    <li><a href="#contact">Kapcsolat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <h2>Üdvözöljük!</h2>
+            <p>Fedezze fel az új világot!</p>
+            <a href="#about" class="btn">Tovább</a>
+        </section>
+        <section id="about" class="about">
+            <h2>Rólunk</h2>
+            <div class="carousel">
+                <div><img src="https://source.unsplash.com/random/800x600" alt="Kép 1"></div>
+                <div><img src="https://source.unsplash.com/random/801x600" alt="Kép 2"></div>
+                <div><img src="https://source.unsplash.com/random/802x600" alt="Kép 3"></div>
+            </div>
+            <p>Cégünk története...</p>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Kapcsolat</h2>
+            <p>Kapcsolatfelvételi információk...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kezdő Vállalkozás. Minden jog fenntartva.</p>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: true
+            });
+        });
+    </script>
+</body>
+</html>
